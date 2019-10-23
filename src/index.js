@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { moviesData} from "./moviesData";
 
+// import './index.css';
+// import App from './App';
+ import * as serviceWorker from './serviceWorker';
+
+let title = "Hello reactwarrious!!!";
+let vote_average = 8.0;
 
 function MovieItem(props) {
-    console.log("props= " , props);
+    console.log("props= " ,props);
     return(
         <div>
             <p>{props.title}</p>
