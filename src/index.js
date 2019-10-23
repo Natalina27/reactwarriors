@@ -6,18 +6,18 @@ import * as serviceWorker from './serviceWorker';
 
 
 function MovieItem(props) {
-    console.log(props);
+    console.log("props= " , props);
     return(
         <div>
-            <p>Title</p>
-            <p>8.0</p>
+            <p>{props.title}</p>
+            <p>{props.vote_average}</p>
         </div>
     )
 }
 function App(){
     return (
     <div>
-        <MovieItem title="Title new"/>
+        <MovieItem title="Title new" vote_average={10.1} />
     </div>
     )
 }
